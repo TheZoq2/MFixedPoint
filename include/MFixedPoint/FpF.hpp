@@ -391,7 +391,7 @@ public:
     /// \brief		Conversion operator from fixed-point to double.
     /// \note		Similar to float conversion.
     explicit operator double() {
-        return (double) rawVal_ / (double) (1 << numFracBits);
+        return (double) rawVal_ / (double) ((BaseType) 1 << numFracBits);
     }
 
     /// \}
